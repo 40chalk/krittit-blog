@@ -1,10 +1,13 @@
 import React from 'react'
-import '../styles/globals.css'
+import '../styles-page-global/globals.css'
+import Layout from '../components/ui/layout/layout'
 
-// eslint-disable-next-line react/prop-types
 function MyApp({ Component, pageProps }) {
-  // eslint-disable-next-line react/jsx-props-no-spreading
-  return <Component {...pageProps} />
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  )
 }
 
 
