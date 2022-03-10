@@ -17,7 +17,7 @@ function PostPreview(props) {
               <Image
                 src={`${paths.postDir}/${post.slug}/${post.image}`}
                 alt={post.title}
-                width={400}
+                width={300}
                 height={200}
                 layout="responsive"
               />

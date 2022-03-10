@@ -1,0 +1,8 @@
+.allPosts {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.allPosts > div {
+    width: 33.3333%
+}

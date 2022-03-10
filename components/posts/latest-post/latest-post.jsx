@@ -23,7 +23,7 @@ function LatestPost(props) {
                 <Image
                   src={`${postsDir}/${post1.slug}/${post1.image}`}
                   alt={post1.title}
-                  width={1000}
+                  width={800}
                   height={550}
                   layout="responsive"
                 />

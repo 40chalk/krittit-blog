@@ -1,0 +1,21 @@
+.search {
+    height: 30vh;
+    background-color: var(--color-grey-800);
+    color: var(--color-grey-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input[type='text'] {
+    background-color: var(--color-grey-800);
+    color: var(--color-grey-100);
+    border: none;
+    border-bottom: var(--color-grey-900) 2px solid;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.search input[type='text']:active, .search input[type='text']:focus {
+    outline: none;
+}
