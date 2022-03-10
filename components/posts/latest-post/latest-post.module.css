@@ -4,16 +4,41 @@
 
 .latestPost h1 {
     text-align: center;
+    font-size: 2vw;
 }
 
 .post {
-    height: 20rem;
+    display: flex;
 }
 
-.excerpt {
-
+.postContentExcerpt {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
 }
 
-.image {
+.postContentImage {
+    width: 50%;
+    display: block;
+}
 
+
+.postPreview {
+    display: flex;
+}
+
+.postPreview > div {
+    width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    .latestPost h1 {
+        font-size: 1.8rem;
+    }
+
+    .postContentExcerpt {
+        font-size: .8rem;
+    }
 }

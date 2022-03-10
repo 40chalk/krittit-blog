@@ -4,6 +4,7 @@ export default {
     alt: 'Logo',
     imageOrText: 'text',
   },
+  postDir: '/blog-posts', // directory in public folder where posts and their images are placed
   home: '/',
   allPost: '/posts',
   contact: '/contact',
