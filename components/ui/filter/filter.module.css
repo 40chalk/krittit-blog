@@ -11,9 +11,36 @@
     flex-flow: wrap row;
 }
 
-.filter button {
+.filter label {
     background-color: var(--color-grey-800);
     color: var(--color-grey-100);
     border: none;
     margin: 4vh;
+    font-size: 1.1vw;
+}
+
+.filter label span {
+    cursor: pointer;
+}
+
+.filter input[type="radio"] {
+    opacity: 0;
+    cursor: unset;
+}
+
+.filter input[type="radio"]:checked ~ span {
+    color: var(--color-success-100);
+}
+
+@media screen and (max-width: 1000px) {
+    .filter {
+        width: 90vw;
+        padding-bottom: 1rem;;
+        padding-right: 1.2rem;
+    }
+
+    .filter label {
+        font-size: inherit;
+        margin: 2vw;
+    }
 }

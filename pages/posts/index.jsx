@@ -22,8 +22,8 @@ function AllPostsPage(props) {
 
   function onFilterChangeHandler(event) {
     if (event.target.value === filter) {
+      event.target.checked = false
       setFilter('')
-      console.log('set to empty')
     }
     if (event.target.value !== filter) {
       setFilter(event.target.value)

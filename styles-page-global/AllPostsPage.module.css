@@ -6,3 +6,20 @@
 .allPosts > div {
     width: 33.3333%
 }
+
+@media screen and (max-width: 1000px) {
+    .allPosts > div {
+        font-size: 1rem;
+        width: 50%;
+    }
+
+    .allPosts h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .allPosts > div {
+        width: 100%;
+    }
+}

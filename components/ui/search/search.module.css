@@ -19,3 +19,20 @@
 .search input[type='text']:active, .search input[type='text']:focus {
     outline: none;
 }
+
+@media screen and (max-width: 1000px) {
+
+    .search input[type='text'] {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .search {
+        height: 10vh;
+    }
+
+    .search input[type='text'] {
+        font-size: 1.8rem;
+    }
+}

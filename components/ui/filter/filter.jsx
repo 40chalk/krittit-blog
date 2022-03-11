@@ -8,17 +8,19 @@ function Filter(props) {
     <div className={classes.filterWrapper}>
       <div className={classes.filter}>
         {filters.map((filter) => (
-          <button
-            key={filter}
-            onClick={onFilter}
-            onKeyDown={onFilter}
-            value={filter}
-            type="button"
-          >
-            {filter}
-          </button>
+          <label htmlFor={filter}>
+            <input
+              key={filter}
+              onClick={onFilter}
+              onKeyDown={onFilter}
+              value={filter}
+              name="filter"
+              type="radio"
+              id={filter}
+            />
+            <span>{filter}</span>
+          </label>
         ))}
-        <span />
       </div>
     </div>
   )
