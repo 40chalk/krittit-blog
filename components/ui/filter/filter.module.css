@@ -1,0 +1,19 @@
+.filterWrapper {
+    background-color: var(--color-grey-800);
+}
+
+.filter {
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap row;
+}
+
+.filter button {
+    background-color: var(--color-grey-800);
+    color: var(--color-grey-100);
+    border: none;
+    margin: 4vh;
+}

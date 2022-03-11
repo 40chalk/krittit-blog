@@ -16,6 +16,9 @@
     ],
     "react/jsx-no-bind": [
       "off"
+    ],
+    "no-param-reassign": [
+      "off"
     ]
   }
 }
