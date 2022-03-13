@@ -8,9 +8,8 @@ function Filter(props) {
     <div className={classes.filterWrapper}>
       <div className={classes.filter}>
         {filters.map((filter) => (
-          <label htmlFor={filter}>
+          <label key={filter} htmlFor={filter}>
             <input
-              key={filter}
               onClick={onFilter}
               onKeyDown={onFilter}
               value={filter}

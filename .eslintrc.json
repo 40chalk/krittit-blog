@@ -19,6 +19,12 @@
     ],
     "no-param-reassign": [
       "off"
+    ],
+    "react/no-unstable-nested-components": [
+      "off",
+      {
+        "allowAsProps": true
+      }
     ]
   }
 }

@@ -1,44 +1,57 @@
-.latestPost {
-
+.latestPost > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: var(--size-responsive-2);
 }
 
-.latestPost h1 {
-    text-align: center;
-    font-size: 2vw;
+.latestPost > div > div {
+    justify-self: center;
+    flex: 0 32%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
 }
 
 .post {
     display: flex;
-}
-
-.postContentExcerpt {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2vw;
-}
-
-.postContentImage {
-    width: 50%;
-    display: block;
+    flex-flow: wrap row;
 }
 
 
 .postPreview {
     display: flex;
+    margin-top: 2%;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .postPreview > div {
-    width: 50%;
+    flex: 0 32%;
+    margin-bottom: 2%;
 }
 
-@media screen and (max-width: 1000px) {
-    .latestPost h1 {
-        font-size: 1.8rem;
+@media screen and (max-width: 1080px) {
+    .latestPost > div {
+        font-size: var(--size-4);
     }
 
-    .postContentExcerpt {
-        font-size: 1rem;
+    .latestPost > div > div {
+        flex: 0 49%;
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .latestPost > div > div {
+        flex: 0 99%;
+        margin-bottom: 2%;
+    }
+
+    .postPreview > div {
+        flex: 0 99%;
+        margin-bottom: 2%;
     }
 }

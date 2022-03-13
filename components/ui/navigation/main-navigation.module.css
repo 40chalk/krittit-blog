@@ -22,7 +22,7 @@
 
 .header a {
     color: var(--color-grey-100);
-    font-size: var(--size-4);
+    font-size: var(--size-responsive-1);
 }
 
 .header a:hover,
@@ -31,12 +31,15 @@
     color: var(--color-grey-200);
 }
 
-@media (min-width: 768px) {
-    .header ul {
-        gap: 0.5rem;
-    }
+@media (max-width: 1080px) {
 
     .header a {
         font-size: var(--size-5);
+    }
+}
+
+@media (min-width: 768px) {
+    .header ul {
+        gap: 0.5rem;
     }
 }

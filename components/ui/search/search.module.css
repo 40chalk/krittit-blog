@@ -12,7 +12,7 @@
     color: var(--color-grey-100);
     border: none;
     border-bottom: var(--color-grey-900) 2px solid;
-    font-size: 2vw;
+    font-size: var(--size-responsive-6);
     text-align: center;
 }
 
@@ -23,16 +23,12 @@
 @media screen and (max-width: 1000px) {
 
     .search input[type='text'] {
-        font-size: 1.8rem;
+        font-size: var(--size-7);
     }
 }
 
 @media screen and (max-width: 700px) {
     .search {
         height: 10vh;
-    }
-
-    .search input[type='text'] {
-        font-size: 1.8rem;
     }
 }

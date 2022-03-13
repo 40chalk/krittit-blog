@@ -16,7 +16,7 @@
     color: var(--color-grey-100);
     border: none;
     margin: 4vh;
-    font-size: 1.1vw;
+    font-size: var(--size-responsive-2);
 }
 
 .filter label span {
@@ -32,11 +32,11 @@
     color: var(--color-success-100);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
     .filter {
         width: 90vw;
-        padding-bottom: 1rem;;
-        padding-right: 1.2rem;
+        padding-bottom: var(--size-4);
+        padding-right: var(--size-5);
     }
 
     .filter label {

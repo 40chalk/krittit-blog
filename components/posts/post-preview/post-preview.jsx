@@ -17,12 +17,14 @@ function PostPreview(props) {
               <Image
                 src={`${paths.postDir}/${post.slug}/${post.image}`}
                 alt={post.title}
-                width={300}
-                height={200}
+                width={600}
+                height={400}
                 layout="responsive"
               />
             </div>
-            <div className={classes.excerpt}>{post.excerpt}</div>
+            <div className={classes.excerptWrapper}>
+              <div>{post.excerpt}</div>
+            </div>
           </div>
         </a>
       </Link>

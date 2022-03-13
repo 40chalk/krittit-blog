@@ -1,26 +1,37 @@
-.post {
-
+.postInfo {
 }
 
 .post h1 {
     text-align: center;
-    font-size: 1.5vw;
+    font-size: var(--size-responsive-4);
     margin: 1vw;
 }
 
-.excerpt {
+.excerptWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    font-size: 1.2vw;
+    font-size: var(--size-responsive-2);
     padding: 1vw;
+    background-color: var(--color-grey-800);
+    color: var(--color-grey-100);
+    min-height: 120px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 1921px) {
+    .excerptWrapper {
+        min-height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
 
     .post h1 {
         font-size: inherit;
     }
 
-    .excerpt {
+    .excerptWrapper {
         font-size: inherit;
     }
 }

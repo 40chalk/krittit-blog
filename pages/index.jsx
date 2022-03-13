@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from '../components/ui/hero/hero'
 import LatestPost from '../components/posts/latest-post/latest-post'
-import { getLastThreePost } from '../lib/post-functions/post-util'
+import { getLastFourPost } from '../lib/post-functions/post-util'
 
 export default function Home(props) {
   const { posts } = props
@@ -14,7 +14,7 @@ export default function Home(props) {
 }
 
 export async function getStaticProps() {
-  const featuredPosts = getLastThreePost()
+  const featuredPosts = getLastFourPost()
 
   return {
     props: {
