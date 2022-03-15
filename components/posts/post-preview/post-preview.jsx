@@ -2,10 +2,16 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import classes from './post-preview.module.css'
-import paths from '../../../global/paths/paths'
+import { paths } from '../../../global/site-settings-and-info'
 
 function PostPreview(props) {
   const { post } = props
+
+  const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  })
 
   return (
     <div className={classes.post}>
@@ -23,6 +29,7 @@ function PostPreview(props) {
               />
             </div>
             <div className={classes.excerptWrapper}>
+              <time>{formattedDate}</time>
               <div>{post.excerpt}</div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import classes from './latest-post.module.css'
 import PostPreview from '../post-preview/post-preview'
-import aboutInfo from '../../../global/about-info'
+import { aboutInfo } from '../../../global/site-settings-and-info'
 
 function LatestPost(props) {
   const { posts } = props

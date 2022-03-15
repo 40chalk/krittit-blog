@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import classes from '../post-preview/post-preview.module.css'
-import paths from '../../../global/paths/paths'
+import { paths } from '../../../global/site-settings-and-info'
 
 function SeriesPreview(props) {
   const { post } = props

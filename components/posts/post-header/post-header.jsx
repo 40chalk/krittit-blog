@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import paths from '../../../global/paths/paths'
+import { paths } from '../../../global/site-settings-and-info'
 import classes from './post-header.module.css'
 
 function PostHeader(props) {

@@ -1,6 +1,6 @@
 .header {
     padding-bottom: var(--size-8);
-    border-bottom: 8px solid var(--color-primary-100);
+    border-bottom: 8px solid var(--highlight-secondary);
     margin: var(--size-4) 0;
     display: flex;
     flex-direction: column-reverse;
@@ -11,7 +11,7 @@
 
 .header h1 {
     font-size: var(--size-8);
-    color: var(--color-primary-500);
+    color: var(--highlight-primary);
     margin: 0;
     line-height: initial;
     text-align: center;

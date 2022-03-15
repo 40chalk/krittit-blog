@@ -1,6 +1,6 @@
 .hero {
     width: 100%;
-    background-color: var(--color-grey-800);
+    background-color: var(--secondary-dark);
     display: block;
 }
 

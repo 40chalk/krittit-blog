@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './filter.module.css'
-import filters from '../../../global/displayed-filter-words'
+import { filters } from '../../../global/site-settings-and-info'
 
 function Filter(props) {
   const { onFilter } = props

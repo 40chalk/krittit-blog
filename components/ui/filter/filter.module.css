@@ -1,5 +1,5 @@
 .filterWrapper {
-    background-color: var(--color-grey-800);
+    background-color: var(--secondary-dark);
 }
 
 .filter {
@@ -12,8 +12,8 @@
 }
 
 .filter label {
-    background-color: var(--color-grey-800);
-    color: var(--color-grey-100);
+    background-color: var(--secondary-dark);
+    color: var(--primary-light);
     border: none;
     margin: 4vh;
     font-size: var(--size-responsive-2);

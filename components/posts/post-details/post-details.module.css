@@ -4,13 +4,13 @@
     margin: var(--size-8) auto;
     font-size: var(--size-responsive-2);
     line-height: var(--size-8);
-    background-color: var(--color-grey-100);
+    background-color: var(--primary-light);
     border-radius: 6px;
     padding: var(--size-4);
 }
 
 .content p {
-    color: var(--color-grey-800);
+    color: var(--secondary-dark);
 }
 
 .content .image {

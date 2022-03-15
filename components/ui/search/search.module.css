@@ -1,17 +1,17 @@
 .search {
     height: 20vh;
-    background-color: var(--color-grey-800);
-    color: var(--color-grey-100);
+    background-color: var(--secondary-dark);
+    color: var(--primary-light);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .search input[type='text'] {
-    background-color: var(--color-grey-800);
-    color: var(--color-grey-100);
+    background-color: var(--secondary-dark);
+    color: var(--primary-light);
     border: none;
-    border-bottom: var(--color-grey-900) 2px solid;
+    border-bottom: var(--primary-dark) 2px solid;
     font-size: var(--size-responsive-6);
     text-align: center;
 }

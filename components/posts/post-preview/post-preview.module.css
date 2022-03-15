@@ -14,9 +14,15 @@
     text-align: center;
     font-size: var(--size-responsive-2);
     padding: 1vw;
-    background-color: var(--color-grey-800);
-    color: var(--color-grey-100);
-    min-height: 120px;
+    background-color: var(--secondary-dark);
+    color: var(--primary-light);
+    min-height: 200px;
+    flex-flow: row wrap;
+}
+
+.excerptWrapper time {
+    width: 100%;
+    justify-content: stretch;
 }
 
 @media screen and (min-width: 1921px) {

@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import paths from '../../../global/paths/paths'
+import { paths } from '../../../global/site-settings-and-info'
 import Logo from '../logo/logo'
 import classes from './main-navigation.module.css'
 
