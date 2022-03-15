@@ -38,8 +38,23 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    .header {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
     .header ul {
+        padding-top: 10px;
+        padding-bottom: 10px;
         gap: 0.5rem;
+    }
+
+    .header li {
+        width: 100%;
     }
 }

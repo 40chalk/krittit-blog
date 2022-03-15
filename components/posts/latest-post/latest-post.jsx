@@ -16,14 +16,9 @@ function LatestPost(props) {
       <section className={classes.latestPost}>
         <div>
           <div>
-            <Image
-              src="/krittTechLogo-01.png"
-              alt="logo"
-              width={300}
-              height={300}
-            />
+            <Image src="/about.png" alt="logo" width={800} height={700} />
           </div>
-          <div>
+          <div className={classes.aboutInfo}>
             <p>{aboutInfo}</p>
           </div>
           <PostPreview post={post1} />

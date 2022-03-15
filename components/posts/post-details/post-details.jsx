@@ -8,12 +8,14 @@ import css from 'react-syntax-highlighter/dist/cjs/languages/prism/css'
 import classes from './post-details.module.css'
 import paths from '../../../global/paths/paths'
 import PostHeader from '../post-header/post-header'
+import SeriesPagination from '../series-pagination/series-pagination'
 
 SyntaxHighlighter.registerLanguage('javascript', js)
 SyntaxHighlighter.registerLanguage('css', css)
 
 function PostDetails(props) {
-  const { title, image, content, slug } = props.post
+  const { post } = props
+  const { title, image, content, slug } = post
 
   const customRenderers = {
     p(paragraph) {
@@ -51,6 +53,7 @@ function PostDetails(props) {
     <article className={classes.content}>
       <PostHeader title={title} image={image} slug={slug} />
       <ReactMarkdown components={customRenderers}>{content}</ReactMarkdown>
+      {post.series && <SeriesPagination post={post} />}
     </article>
   )
 }

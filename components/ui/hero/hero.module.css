@@ -1,11 +1,27 @@
 .hero {
     width: 100%;
-    height: 50vh;
     background-color: var(--color-grey-800);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10%;
-    color: var(--color-grey-100);
-    font-size: var(--size-4);
+    display: block;
+}
+
+.desktop {
+    display: block !important;
+}
+
+.mobile {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .desktop {
+        display: none !important;
+    }
+
+    .mobile {
+        display: block !important;
+    }
+
+    .hero {
+        margin-bottom: 40px;
+    }
 }

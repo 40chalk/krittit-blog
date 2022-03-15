@@ -1,5 +1,4 @@
 .logo {
-    text-transform: uppercase;
     font-size: var(--size-responsive-5);
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
@@ -11,6 +10,6 @@
 
 @media (max-width: 1080px) {
     .logo {
-        font-size: var(--size-8);
+        font-size: var(--size-5);
     }
 }
