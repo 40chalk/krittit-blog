@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import classes from '../../../styles-page-global/AllPostsPage.module.css'
 import PostPreview from '../../../components/posts/post-preview/post-preview'
 import {
@@ -9,11 +10,17 @@ import {
 function SeriesPage(props) {
   const { posts } = props
   return (
-    <section className={classes.allPosts}>
-      {posts.map((post) => (
-        <PostPreview key={post.slug} post={post} />
-      ))}
-    </section>
+    <>
+      <Head>
+        <title>{`${posts[posts.length - 1].series}`}</title>
+        <meta name="description" content={posts[posts.length - 1].excerpt} />
+      </Head>
+      <section className={classes.allPosts}>
+        {posts.map((post) => (
+          <PostPreview key={post.slug} post={post} />
+        ))}
+      </section>
+    </>
   )
 }
 

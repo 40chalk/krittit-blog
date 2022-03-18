@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Head from 'next/head'
 import PostPreview from '../../components/posts/post-preview/post-preview'
 import classes from '../../styles-page-global/AllPostsPage.module.css'
 import Search from '../../components/ui/search/search'
@@ -9,6 +10,7 @@ import {
 } from '../../lib/post-functions/search-and-sort-util'
 import Filter from '../../components/ui/filter/filter'
 import { getAllPost } from '../../lib/post-functions/post-util'
+import { metaData } from '../../global/site-settings-and-info'
 
 function AllPostsPage(props) {
   const { posts } = props
@@ -36,6 +38,10 @@ function AllPostsPage(props) {
 
   return (
     <>
+      <Head>
+        <title>{`${metaData.title} Posts`}</title>
+        <meta name="description" content={metaData.allPostsPage} />
+      </Head>
       <Search onSearch={onSearchHandler} />
       <Filter onFilter={onFilterChangeHandler} />
       <section className={classes.allPosts}>

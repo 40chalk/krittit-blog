@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import {
   getNumberOfPostInSeries,
   getPostData,
@@ -9,7 +10,15 @@ import PostDetails from '../../components/posts/post-details/post-details'
 
 function BlogPostPage(props) {
   const { post } = props
-  return <PostDetails post={post} />
+  return (
+    <>
+      <Head>
+        <title>{post.title}</title>
+        <meta name="description" content={post.excerpt} />
+      </Head>
+      <PostDetails post={post} />
+    </>
+  )
 }
 
 export async function getStaticProps(context) {
