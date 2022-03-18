@@ -1,0 +1,86 @@
+.contact {
+    margin: 2%;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper div, .wrapper form {
+    flex: 0 99%;
+}
+
+.form {
+    background-color: var(--secondary-dark);
+    padding: 2%;
+    color: var(--primary-light);
+}
+
+.form label {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.form label input, .form label textarea {
+    width: 100%;
+    background-color: var(--primary-light);
+    margin-top: 5px;
+}
+
+.form label .valid, .form label .valid {
+    background-color: var(--color-success-100);
+}
+
+.form label .invalid, .form label .invalid {
+    background-color: var(--color-error-100);
+}
+
+.form button {
+    width: 100%;
+    border-radius: unset;
+}
+
+.form input, .form textarea, .form button {
+    outline: var(--primary-light);
+    border: none;
+}
+
+@media screen and (min-width: 1000px) {
+    .contact h2 {
+        width: 50%;
+        margin: auto;
+    }
+
+    .wrapper {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper div, .wrapper form {
+        flex: 0 49%;
+    }
+
+    .wrapper > div {
+        max-width: 40%;
+    }
+
+    .form {
+        max-width: 40%;
+    }
+
+    .contact {
+        font-size: var(--size-responsive-1);
+    }
+
+    .contact label input, .contact label textarea {
+        font-size: var(--size-responsive-3);
+    }
+}

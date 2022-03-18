@@ -30,7 +30,7 @@ function PostPreview(props) {
             </div>
             <div className={classes.excerptWrapper}>
               <time>{formattedDate}</time>
-              <div>{post.excerpt}</div>
+              <p>{post.excerpt}</p>
             </div>
           </div>
         </a>

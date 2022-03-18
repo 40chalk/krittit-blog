@@ -16,8 +16,15 @@
     padding: 1vw;
     background-color: var(--secondary-dark);
     color: var(--primary-light);
-    min-height: 200px;
+    min-height: 170px;
     flex-flow: row wrap;
+}
+
+.excerptWrapper p {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .excerptWrapper time {
@@ -27,7 +34,13 @@
 
 @media screen and (min-width: 1921px) {
     .excerptWrapper {
-        min-height: 200px;
+        min-height: 260px;
+    }
+}
+
+@media screen and (min-width: 2561px) {
+    .excerptWrapper {
+        min-height: 320px;
     }
 }
 
