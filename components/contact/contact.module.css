@@ -53,6 +53,10 @@
     border: none;
 }
 
+.form textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
 @media screen and (min-width: 1000px) {
     .contact h2 {
         width: 50%;

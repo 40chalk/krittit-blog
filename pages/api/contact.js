@@ -1,4 +1,5 @@
 import nodemailer from 'nodemailer'
+import { metaData } from '../../global/site-settings-and-info'
 
 async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -16,18 +17,21 @@ async function handler(req, res) {
   }
 
   const mail = {
-    from: `KrittIt Blog Contact <cstelum8aegis@outlook.com>`,
+    from: `${metaData.title} Contact <${process.env.FROM_EMAIL_ADDRESS}>`,
     replyTo: email,
-    to: 'cstelum8aegis@outlook.com',
-    subject: 'KrittIt Blog Contact Form',
+    to: process.env.TO_EMAIL_ADDRESS,
+    subject: `${metaData.title} Contact Form Submission`,
     text: `${name}\n${email}\n${message}`,
   }
 
   const transporter = nodemailer.createTransport({
-    host: 'smtp.office365.com',
-    port: '587',
-    auth: { user: 'cstelum8aegis@outlook.com', pass: 'Inan3kr!ttId!0m5R4Ink' },
-    secureConnection: true,
+    host: process.env.SMTP_ADDRESS,
+    port: process.env.SMTP_PORT,
+    auth: {
+      user: process.env.EMAIL_USERNAME,
+      pass: process.env.EMAIL_PASSWORD,
+    },
+    secureConnection: process.env.EMAIL_SECURE,
     tls: { ciphers: 'SSLv3' },
   })
 
