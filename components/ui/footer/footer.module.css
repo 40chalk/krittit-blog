@@ -5,5 +5,22 @@
     align-items: center;
     padding: 0 10%;
     color: var(--primary-light);
-    font-size: var(--size-4);
+    font-size: var(--size-responsive-1);
+}
+
+.footer a:hover,
+.footer a:active,
+.footer a.active {
+    color: var(--navigation-text-hover);
+}
+
+.footer svg {
+    padding: .5vw;
+}
+
+@media (max-width: 1080px) {
+
+    .footer {
+        font-size: var(--size-5);
+    }
 }

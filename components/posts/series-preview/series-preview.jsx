@@ -9,6 +9,12 @@ function SeriesPreview(props) {
 
   const seriesSlug = post.series.toLowerCase().replace(/ /g, '-')
 
+  const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  })
+
   return (
     <div className={classes.post}>
       <Link href={`${paths.allSeries}/${seriesSlug}`}>
@@ -25,7 +31,8 @@ function SeriesPreview(props) {
               />
             </div>
             <div className={classes.excerptWrapper}>
-              <div>{post.excerpt}</div>
+              <time>{formattedDate}</time>
+              <p>{post.excerpt}</p>
             </div>
           </div>
         </a>
