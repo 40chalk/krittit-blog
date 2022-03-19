@@ -18,6 +18,7 @@
     background-color: var(--secondary-dark);
     padding: 2%;
     color: var(--primary-light);
+    box-shadow: 2px 2px 5px var(--secondary-dark);
 }
 
 .form label {

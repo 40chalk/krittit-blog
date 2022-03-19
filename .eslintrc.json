@@ -25,6 +25,9 @@
       {
         "allowAsProps": true
       }
+    ],
+    "no-unused-expressions": [
+      "off"
     ]
   }
 }

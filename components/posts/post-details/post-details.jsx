@@ -3,6 +3,8 @@ import ReactMarkdown from 'react-markdown'
 import Image from 'next/image'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
 import atomDark from 'react-syntax-highlighter/dist/cjs/styles/prism/atom-dark'
+import php from 'react-syntax-highlighter/dist/cjs/languages/prism/php'
+import java from 'react-syntax-highlighter/dist/cjs/languages/prism/java'
 import js from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript'
 import css from 'react-syntax-highlighter/dist/cjs/languages/prism/css'
 import classes from './post-details.module.css'
@@ -10,7 +12,9 @@ import { paths } from '../../../global/site-settings-and-info'
 import PostHeader from '../post-header/post-header'
 import SeriesPagination from '../series-pagination/series-pagination'
 
-SyntaxHighlighter.registerLanguage('javascript', js)
+SyntaxHighlighter.registerLanguage('js', js)
+SyntaxHighlighter.registerLanguage('php', php)
+SyntaxHighlighter.registerLanguage('java', java)
 SyntaxHighlighter.registerLanguage('css', css)
 
 function PostDetails(props) {
