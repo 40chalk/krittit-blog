@@ -14,6 +14,17 @@
     flex: 0 99%;
 }
 
+.wrapper div a {
+    font-size: var(--size-responsive-8);
+    padding: var(--size-responsive-4);
+}
+
+.wrapper a:hover,
+.wrapper a:active,
+.wrapper a.active {
+    color: var(--secondary-dark);
+}
+
 .form {
     background-color: var(--secondary-dark);
     padding: 2%;

@@ -53,5 +53,12 @@
 
     .excerptWrapper {
         font-size: inherit;
+        min-height: 125px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .excerptWrapper {
+        min-height: auto;
     }
 }

@@ -40,6 +40,7 @@ body {
     --size-responsive-4: 1.6vw;
     --size-responsive-5: 1.8vw;
     --size-responsive-6: 2vw;
+    --size-responsive-8: 4vw;
 
     margin: 0;
     background-color: var(--background);

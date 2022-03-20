@@ -1,5 +1,9 @@
 import nodemailer from 'nodemailer'
-import { metaData } from '../../global/site-settings-and-info'
+import { contactFormOn, metaData } from '../../global/site-settings-and-info'
+
+if (!contactFormOn) {
+  return
+}
 
 async function handler(req, res) {
   if (req.method !== 'POST') {

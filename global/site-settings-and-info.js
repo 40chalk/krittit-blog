@@ -1,6 +1,9 @@
 // Turns series functionality on. false = off true = one
 export const seriesOn = true
 
+// Turns contact form on. false = off true = on
+export const contactFormOn = false
+
 // The text that shows up on home page
 export const aboutInfo =
   'I am a multi lingual dev as I imagine most devs are these day. I work with primarily PHP and JavaScript along with most of their big frameworks and libraries. I also dabble in Java and Python as well. Making the occasional MineCraft mod or mod-pack. This is a collection of project showcases, thoughts related to dev, and problems that I have encountered where I thought the solutions might be helpful to others.'
@@ -36,14 +39,15 @@ export const filters = [
 
 // Social media links for footer leave and empty string to exclude a specific one.
 export const social = {
-  bitbucket: 'https://bitbucket.com',
-  facebook: '',
+  bitbucket: '',
+  facebook: 'https://bitbucket.com',
   github: '',
   gitlab: '',
-  instagram: '',
+  instagram: 'https://bitbucket.com',
   linkedin: '',
+  patreon: '',
   stackoverflow: '',
-  twitter: '',
+  twitter: 'https://bitbucket.com',
   youtube: '',
 }
 

@@ -8,7 +8,7 @@ import java from 'react-syntax-highlighter/dist/cjs/languages/prism/java'
 import js from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript'
 import css from 'react-syntax-highlighter/dist/cjs/languages/prism/css'
 import classes from './post-details.module.css'
-import { paths } from '../../../global/site-settings-and-info'
+import { paths, seriesOn } from '../../../global/site-settings-and-info'
 import PostHeader from '../post-header/post-header'
 import SeriesPagination from '../series-pagination/series-pagination'
 
@@ -57,7 +57,7 @@ function PostDetails(props) {
     <article className={classes.content}>
       <PostHeader title={title} image={image} slug={slug} />
       <ReactMarkdown components={customRenderers}>{content}</ReactMarkdown>
-      {post.series && <SeriesPagination post={post} />}
+      {seriesOn && post.series && <SeriesPagination post={post} />}
     </article>
   )
 }
