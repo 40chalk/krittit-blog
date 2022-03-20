@@ -6,55 +6,46 @@ export const contactFormOn = false
 
 // The text that shows up on home page
 export const aboutInfo =
-  'I am a multi lingual dev as I imagine most devs are these day. I work with primarily PHP and JavaScript along with most of their big frameworks and libraries. I also dabble in Java and Python as well. Making the occasional MineCraft mod or mod-pack. This is a collection of project showcases, thoughts related to dev, and problems that I have encountered where I thought the solutions might be helpful to others.'
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 
 // The text that shows up on contact page
 export const contactStatement =
-  "Want some help with a job? Have a question? Feel free to contact me through the form bellow and I'll get back to you promptly."
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad'
 
 // SEO meta tag data for each of the pages. What you write here will show up as the description in google.
 export const metaData = {
   title: 'KrittIt Blog',
   homePage:
-    'KrittIt Blog is a collection of project showcases, thoughts related to dev, and problems that I have encountered in regards to PHP, JavaScript, React, NextJS, Laravel, WordPress, CSS, and Java.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.',
   allPostsPage:
-    'Post related to PHP, JavaScript, React, NextJS, Laravel, WordPress, CSS, and Java.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
   seriesPage:
-    'Collections of posts related to PHP, JavaScript, React, NextJS, Laravel, WordPress, CSS, and Java.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
   contactPage:
-    'Contact me with a question or hire me for a job related to PHP, JavaScript, React, NextJS, Laravel, WordPress, CSS, and Java.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
 }
 
 // Filters for posts. These should match the filterKeys in your post's md files
-export const filters = [
-  'JavaScript',
-  'NextJS',
-  'React',
-  'Angular',
-  'NodeJs',
-  'PHP',
-  'Laravel',
-  'WordPress',
-]
+export const filters = ['Lorem', 'ipsum', 'dolor', 'amet']
 
 // Social media links for footer leave and empty string to exclude a specific one.
 export const social = {
   bitbucket: '',
-  facebook: 'https://bitbucket.com',
+  facebook: 'https://example.com',
   github: '',
   gitlab: '',
-  instagram: 'https://bitbucket.com',
+  instagram: 'https://example.com',
   linkedin: '',
   patreon: '',
   stackoverflow: '',
-  twitter: 'https://bitbucket.com',
+  twitter: 'https://example.com',
   youtube: '',
 }
 
 // Logo for site. You can choose between an image or text. If you choose text the alt text is what will render
 export const logo = {
   imagePath: '/images/logo/logo.png',
-  alt: '< KrittIT Blog />',
+  alt: 'Example',
   imageOrText: 'text',
 }
 
