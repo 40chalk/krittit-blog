@@ -4,7 +4,8 @@ An easy to configure and customise, fully featured, NextJS blog using .md files.
 ## Format for .md files
 
 ## Normal Blog Post
-###---
+---
+
 title: example
 
 image: example.png
@@ -14,10 +15,12 @@ date: 2022-01-12
 filterKeys: ex, examp, example
 
 excerpt: This is an example excerpt
-###---
+
+---
 Then the content of your blog post.
 ## Series Blog Post
-###---
+---
+
 title: example
 
 image: example.png
@@ -31,7 +34,8 @@ excerpt: This is an example excerpt
 series: Example Series
 
 numberInSeries: 1
-###---
+
+---
 Then the content of your blog post.
 
 ## Directory and .md File Name
