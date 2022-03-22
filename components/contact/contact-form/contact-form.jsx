@@ -66,6 +66,7 @@ function ContactForm() {
 
       if (!response.ok) {
         setStatus('Something went wrong!')
+        // eslint-disable-next-line no-console
         console.log(data)
       }
 

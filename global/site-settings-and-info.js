@@ -49,7 +49,7 @@ export const logo = {
   imageOrText: 'text',
 }
 
-// Paths for each page
+// Paths for each page don't change!
 export const paths = {
   postDir: '/blog-posts', // directory in public folder where posts and their images are placed
   home: '/',

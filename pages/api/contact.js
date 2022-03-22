@@ -1,11 +1,10 @@
 import nodemailer from 'nodemailer'
 import { contactFormOn, metaData } from '../../global/site-settings-and-info'
 
-if (!contactFormOn) {
-  return
-}
-
 async function handler(req, res) {
+  if (!contactFormOn) {
+    return
+  }
   if (req.method !== 'POST') {
     res.json({ message: 'not here' })
     return
