@@ -6,6 +6,10 @@
     font-size: var(--size-responsive-2);
 }
 
+.latestPost > div  a{
+    width: 100%;
+}
+
 .latestPost > div > div {
     justify-self: center;
     flex: 0 32%;
