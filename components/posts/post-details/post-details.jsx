@@ -46,7 +46,7 @@ function PostDetails(props) {
       const language = className.replace('language-', '')
 
       return (
-        <SyntaxHighlighter style={atomDark} language={language}>
+        <SyntaxHighlighter className={classes.code} style={atomDark} language={language}>
           {children}
         </SyntaxHighlighter>
       )
