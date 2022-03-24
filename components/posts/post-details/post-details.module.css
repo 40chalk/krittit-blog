@@ -13,6 +13,10 @@
     color: var(--secondary-dark);
 }
 
+.code {
+    font-size: var(--size-responsive-1);
+}
+
 .content .image {
     margin: var(--size-4) auto;
     width: 100%;
@@ -25,5 +29,8 @@
     .content {
         max-width: 60rem;
         font-size: var(--size-5);
+    }
+    .code {
+        font-size: var(--size-4)
     }
 }
