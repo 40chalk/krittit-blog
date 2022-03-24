@@ -33,8 +33,8 @@ function PostDetails(props) {
             <Image
               src={`${paths.postDir}/${slug}/${nestedImage.properties.src}`}
               alt={nestedImage.alt}
-              width={1000}
-              height={500}
+              layout="fill"
+              objectFit="contain"
             />
           </div>
         )
