@@ -7,5 +7,5 @@ excerpt: Number three blog post
 series: My Series
 numberInSeries: 1
 ---
-#Series Post 1
+# Series Post 1
 This is a series post
