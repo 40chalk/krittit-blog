@@ -7,6 +7,7 @@ import php from 'react-syntax-highlighter/dist/cjs/languages/prism/php'
 import java from 'react-syntax-highlighter/dist/cjs/languages/prism/java'
 import js from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript'
 import css from 'react-syntax-highlighter/dist/cjs/languages/prism/css'
+import shell from 'react-syntax-highlighter/dist/cjs/languages/prism/shell-session'
 import classes from './post-details.module.css'
 import { paths, seriesOn } from '../../../global/site-settings-and-info'
 import PostHeader from '../post-header/post-header'
@@ -16,6 +17,7 @@ SyntaxHighlighter.registerLanguage('js', js)
 SyntaxHighlighter.registerLanguage('php', php)
 SyntaxHighlighter.registerLanguage('java', java)
 SyntaxHighlighter.registerLanguage('css', css)
+SyntaxHighlighter.registerLanguage('shell', shell)
 
 function PostDetails(props) {
   const { post } = props
