@@ -16,7 +16,9 @@
 .content .image {
     margin: var(--size-4) auto;
     width: 100%;
-    max-width: 35vw;
+    max-width: 80vw;
+    position: relative;
+    height: 35vh;
 }
 
 @media screen and (max-width: 1080px) {
