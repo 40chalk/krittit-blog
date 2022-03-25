@@ -6,7 +6,7 @@ export const contactFormOn = false
 
 // Logo for site. You can choose between an image or text. If you choose text the alt text is what will render
 export const logo = {
-  imagePath: '/images/logo/logo.png',
+  imagePath: '/logo.png',
   alt: 'Example',
   imageOrText: 'text',
 }
