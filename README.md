@@ -1,6 +1,8 @@
 #KrittIT Blog
 An easy to configure and customise, fully featured, NextJS blog using .md files. Host on providers like [Vercel](https://vercel.com/). Then just push your md files to your git repository and your blog will be automatically updated. No database needed.
 
+Got to [https://blog.krittit.com](https://blog.krittit.com) to see a live version of the blog, as well as a full tutorial on how to set it up.
+
 ## Format for .md files
 
 ## Normal Blog Post
