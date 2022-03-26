@@ -40,6 +40,6 @@
 
 @media screen and (max-width: 768px) {
     .allPosts > div {
-        flex: 0 99%;
+        flex: 0 96%;
     }
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import moment from 'moment'
 import classes from '../post-preview/post-preview.module.css'
 import { paths } from '../../../global/site-settings-and-info'
 
@@ -9,7 +10,9 @@ function SeriesPreview(props) {
 
   const seriesSlug = post.series.toLowerCase().replace(/ /g, '-')
 
-  const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
+  const formattedDate = new Date(
+    moment(post.date, 'YYYY-MM-DD')
+  ).toLocaleDateString('en-US', {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
